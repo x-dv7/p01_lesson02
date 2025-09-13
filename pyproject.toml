@@ -1,0 +1,12 @@
+[project]
+name = "lesson02"
+version = "0.1.0"
+description = "Управляющие конструкции в Python"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff>=0.13.0",
+]
