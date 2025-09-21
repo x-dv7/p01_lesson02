@@ -99,6 +99,16 @@ class ClassExercise:
         finally:
             print('Программа завершена')
 
+    def exersice10(self):
+        """Метод задания 10."""
+        lv_val = int(input('Введите число 1: '))
+        lv_result1 = 'even' if lv_val % 2 == 0 else 'odd'
+        print(lv_result1)
+        lv_val2 = input('Введите число 2: ')
+        if (lv_res := lv_val2).isnumeric():
+            print('Это число' + str(lv_res))
+
+
 
 
 def main():
@@ -129,8 +139,9 @@ def main():
             lo_ex.excersice8()
         case 9: 
             hello()
-        case 10:
             print('Сумма двух чисел: ' + str(add(2, 3)))
+        case 10:
+            lo_ex.exersice10()
         case _:
             print('Такого задания нет')
 
