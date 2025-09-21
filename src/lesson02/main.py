@@ -45,6 +45,49 @@ class ClassExercise:
         else:
             print('negative')
 
+        if self.val4 % 2 == 0 and self.val4 % 3 == 0:
+            print('делится на 2 и на 3')
+        elif self.val4 % 2 == 0:
+            print('делится на 2')
+        elif self.val4 % 3 == 0:
+            print('делится на 3')
+        
+    def exersice5(self):
+        """Метод задания 5."""
+        self.val5 = int(input('Введите число: '))
+        if self.val5 is None:
+            print('None')
+        elif 10 <= self.val5 <= 20: 
+            print('[10, 20]') 
+
+    def exersice6(self):
+        """Метод задания 6."""
+        self.val6 = input('Введите команду: ')
+        match self.val6:
+            case 'start':
+                print('Запуск')
+            case 'stop':
+                print('Остановка')
+            case 'pause':
+                print('Пауза')
+            case _:
+                print('Неизвестная команда')
+    
+    def exersice7(self):
+        """Метод задания 7."""
+        for i in range(1, 6, 1):
+            print(i ** 2)
+        lv_p = str()
+        while lv_p != '1234':
+            lv_p = input('Введите пароль: ')
+        else:
+            print('Успешный вход')
+
+    def excersice8(self):
+        """Метод задания 8."""
+        pass
+
+
 def main():
     """Главная функция приложения lesson02.
     
@@ -63,6 +106,14 @@ def main():
             lo_ex.exersice3()    
         case 4:
             lo_ex.exersice4()
+        case 5:
+            lo_ex.exersice5()
+        case 6:
+            lo_ex.exersice6()
+        case 7: 
+            lo_ex.exersice7()
+        case 8:
+            lo_ex.excersice8()
         case _:
             print('Такого задания нет')
 
