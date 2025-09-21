@@ -1,5 +1,6 @@
-
 """Основной модуль приложения lesson02."""
+
+from mymodule import hello
 
 def todo():
     """Функция todo."""
@@ -85,7 +86,17 @@ class ClassExercise:
 
     def excersice8(self):
         """Метод задания 8."""
-        pass
+        lv_v = int(10)
+        try:
+            lv_d = int(input('Введите делитель: '))
+            print('10 / ' + str(lv_d) + ' = ' + str(lv_v / lv_d))
+        except ValueError:
+            print('Неверное значение')
+        except ZeroDivisionError:
+            print('Деление на ноль')
+        finally:
+            print('Программа завершена')
+
 
 
 def main():
@@ -114,6 +125,8 @@ def main():
             lo_ex.exersice7()
         case 8:
             lo_ex.excersice8()
+        case 9: 
+            hello()
         case _:
             print('Такого задания нет')
 
