@@ -1,6 +1,8 @@
 """Основной модуль приложения lesson02."""
 
-from mymodule import hello
+from lesson02.mymodule import hello
+from mypackage02.mymodule import add
+
 
 def todo():
     """Функция todo."""
@@ -127,10 +129,10 @@ def main():
             lo_ex.excersice8()
         case 9: 
             hello()
+        case 10:
+            print('Сумма двух чисел: ' + str(add(2, 3)))
         case _:
             print('Такого задания нет')
-
-
 
 
 if __name__ == '__main__':
